@@ -71,3 +71,11 @@ app.delete('/contacts/:id', (req, res) => {
 
 
 app.listen(PORT, () => console.log('Der Port läuft'))
+
+app.get('/', (req, res) => {
+    res.sendFile('index.html');
+});
+
+app.post('/submit', (req, res) => {
+    let info = req.body.Name 
+})
